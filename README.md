@@ -32,18 +32,18 @@ To run this, use the following commands -
 
 This is the original image, 750 wide, 807 high
 
-![original cactus image 1](image/original.jpg)
+![original cactus image 1](images/original.jpg)
 
 These are valid inputs from the terminal and the images that would result.
 
 	python run_application.py original.jpg mosaic 10
 
-![mosaic cactus example 10](image/mosaic_10_original.jpg)
+![mosaic cactus example 10](images/mosaic_10_original.jpg)
 
 	python run_application.py original.jpg mosaic 20
 
-![mosaic cactus example 20](image/mosaic_20_original.jpg)
+![mosaic cactus example 20](images/mosaic_20_original.jpg)
 
 	python run_application.py original.jpg mosaic 30
 
-![mosaic cactus example 30](image/mosaic_30_original.jpg)
+![mosaic cactus example 30](images/mosaic_30_original.jpg)
