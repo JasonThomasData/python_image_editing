@@ -27,6 +27,8 @@ def run_application():
 
     new_image_data = simplify.process_image_data(image_data, image_width, image_height, rgb_categories)
 
-    handle_file.save_new_file(original_file_name, 'make_simple', 'x', new_image_data)
+    rgb_string = '{}_{}_{}'.format(red_category_number, green_category_number, blue_category_number)
+
+    handle_file.save_new_file(original_file_name, 'make_simple', rgb_string, new_image_data)
 
 run_application()

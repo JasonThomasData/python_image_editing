@@ -1,49 +1,49 @@
-##Image editing in Python
+## Image editing in Python
 
 This project started with two ideas for an image effect that I haven't seen yet. I want to take an image, split it into a grid of pixels and replace grid cells with different objects.
 
-The object I want to replace the grid cells with is a circle. I will reduce each grid cell/square to greyscale and depending on how dark it is, replace it with a donut shape. The brighter the grid cell/square, the more filled in it will be. The more lightest square will just be a thin circle.
+Now, this is simply a place where I will keep image editing scripts so that they can share code etc.
 
-The splitting of the image into squares is the first step, so to do this I made a script that turns an image into a mosaic.
-
-###Installing
+### Installing
 
 I'll always recommend using a [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/). 
 
 The best way to install the dependencies for this program is to run
 	
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
-###Usage
+### Usage
 
-I've tested this program with ```.jpg``` files, which have RGB values. ```.gif``` files do not so those won't work.
+The project has a few executable programs in the top directory. Those include:
 
-To run this, use the following commands -
+    ./run_project <file> mosaic 40 # Makes mosaic with tiles 40 pixels in width
+    ./make_simple <file> 4 3 2 # reduces the range of colours to 4 red, 3 green and 2 blue
+    blue
 
-	python run_application.py <original_file_name> <option> <square_width>
+I've tested these programs with ```.jpg``` files, which have RGB values. ```.gif``` files do not so those won't work.
 
-```<original_file_name>``` - this should be in the ```/images``` folder. The images folder is also where the resulting images are saved.
+### Use examples
 
-```<option>``` - this is the process that you want to apply to the image. At the moment, ```mosaic``` is the only one available.
+#### Mosaic
 
-```<square_width>``` - the size of the resulting squares.
+Original
 
-###Use examples
+![original](images/original.jpg)
 
-This is the original image, 750 wide, 807 high
-
-![original cactus image 1](images/original.jpg)
-
-These are valid inputs from the terminal and the images that would result.
-
-	python run_application.py original.jpg mosaic 10
+	./run_application.py original.jpg mosaic 10
 
 ![mosaic cactus example 10](images/mosaic_10_original.jpg)
 
-	python run_application.py original.jpg mosaic 20
-
-![mosaic cactus example 20](images/mosaic_20_original.jpg)
-
-	python run_application.py original.jpg mosaic 30
+	./run_application.py original.jpg mosaic 30
 
 ![mosaic cactus example 30](images/mosaic_30_original.jpg)
+
+#### Make simple
+
+Original
+
+![original](images/pexels-photo-326900.jpeg)
+    
+    ./make_simple.py pexels-photo-326900.jpeg 2 5 2
+
+![original](images/make_simple_2_5_2_pexels-photo-326900.jpeg)
