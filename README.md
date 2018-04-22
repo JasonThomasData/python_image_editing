@@ -30,11 +30,11 @@ Original
 
 ![original](images/original.jpg)
 
-	./run_application.py original.jpg mosaic 10
+	./run_application.py images/original.jpg mosaic 10
 
 ![mosaic cactus example 10](images/mosaic_10_original.jpg)
 
-	./run_application.py original.jpg mosaic 30
+	./run_application.py images/original.jpg mosaic 30
 
 ![mosaic cactus example 30](images/mosaic_30_original.jpg)
 
@@ -44,6 +44,6 @@ Original
 
 ![original](images/pexels-photo-326900.jpeg)
     
-    ./make_simple.py pexels-photo-326900.jpeg 2 5 2
+    ./make_simple.py images/pexels-photo-326900.jpeg 2 5 2
 
 ![original](images/make_simple_2_5_2_pexels-photo-326900.jpeg)
