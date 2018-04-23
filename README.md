@@ -17,3 +17,5 @@ The best way to install the dependencies for this program is to run
 [Mosaic](docs/mosaic.md)
 
 [Simplify colours](docs/simplify_colours.md)
+
+[Outlines](docs/outlines.md)
