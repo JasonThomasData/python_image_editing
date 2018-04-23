@@ -6,7 +6,7 @@ converted to JPEG after processing to display here, because the actual files are
 You don't want to use JPEG for this process, because the JPEG algorithm is lossy and won't be
 detailed enough to convert.
 
-![original](../images/DSC_0110.NEF)
+![DSC_0110.NEF](../images/DSC_0110.NEF)
 
     ufraw-batch --output=images/FILE_geeves.tiff --out-type=tiff images/DSC_0110.NEF
 
@@ -18,4 +18,4 @@ detailed enough to convert.
 
     ./outlines.py images/make_simple_4_4_4_FILE_geeves.tiff
 
-![outlines__make_simple_4_4_4_FILE_geeves.tiff](outlines__make_simple_4_4_4_FILE_geeves.tiff.jpg)
+![outlines__make_simple_4_4_4_FILE_geeves.tiff](../images/outlines__make_simple_4_4_4_FILE_geeves.tiff.jpg)
